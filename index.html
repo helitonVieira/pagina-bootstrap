@@ -2,13 +2,104 @@
 <html lang="pt-br">
 
 <head>
-    <title>Minha página Bootstrap</title>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+  <title>Minha página Bootstrap</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Garante redimencionamento tamanho da pagina -->
+
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
 </head>
 
 <body>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="img/logoVsystem.png" width="100" height="50">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#quemsomos">Quem somos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#parceiros">Parceiros</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#servicos">Serviços</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <section id="quemsomos">
+    <div class="container-fluid quem-somos text-center margin">
+      <h3>Quem somos</h3>
+      <img class="rounded-circle" src="img/foto do zap.jpeg" width="200" height="200">
+      <h3>Somos um time comprometido em resultados</h3>
+    </div>
+  </section>
+
+  <section id="parceiros">
+    <div class="container-fluid parceiros text-center margin">
+      <h3>Parceiros</h3>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <img src="img/20191019_172705.jpg" width="40%">
+          </div>
+          <div class="col-lg-4">
+            <img class="rounded-circle" src="img/20191025_224859.jpg" width="70%">
+          </div>
+          <div class="col-lg-4">
+            <img src="img/20200206_153143.jpg" width="40%">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="servicos">
+    <div class="container-fluid text-center servicos margin">
+      <h3>Serviços</h3>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <p>(pode ser definido como um ambiente de execução Javascript server-side.
+              Isso significa que com o Node.js é possível criar aplicações Javascript para rodar</p>
+            <img src="img/20191019_172705.jpg" width="40%">
+          </div>
+          <div class="col-lg-4">
+            <p>(pode ser definido como um ambiente de execução Javascript server-side.
+              Isso significa que com o Node.js é possível criar aplicações Javascript para rodar</p>
+            <img  src="img/20191025_224859.jpg" width="70%">
+          </div>
+          <div class="col-lg-4">
+            <p>(pode ser definido como um ambiente de execução Javascript server-side.
+              Isso significa que com o Node.js é possível criar aplicações Javascript para rodar</p>
+            <img src="img/20200206_153143.jpg" width="40%">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer  class="container-fluid text-center bg-footer">
+    <p>Desenvolvido por Heliton Silva Vieira</p>
+
+  </footer>
 </body>
 
 </html>
